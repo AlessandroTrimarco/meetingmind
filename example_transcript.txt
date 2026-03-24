@@ -1,0 +1,21 @@
+Team Standup -- March 24, 2026
+Participants: Alessandro (AI Engineer), Maria (Product), Carlos (CTO)
+
+Alessandro: Finished the RAG pipeline refactor. Response time went from 1.2 seconds to 180ms.
+Maria: Can we deploy to staging this week?
+Alessandro: Yes, ready by Thursday. Need Carlos to review infrastructure changes first.
+Carlos: I'll review Wednesday afternoon. We need rate limiting before going live.
+Alessandro: Agreed. I'll implement Upstash Redis rate limiting, should take a few hours.
+Maria: What about the fraud detection report? Legal asked for it.
+Alessandro: The system caught EUR 12,000 in suspicious transactions so far. Report by end of week.
+Carlos: Make that a priority -- legal needs it by Friday. Also, we should migrate from GPT-4 to Claude.
+Alessandro: I ran the benchmarks. Same quality, 80% cost reduction. I vote we migrate.
+Carlos: Approved. Alessandro, migration by next Monday?
+Alessandro: Yes, all endpoints plus docs updated.
+Maria: WhatsApp integration getting complaints about weekend delays.
+Alessandro: I'll fix the worker queue today.
+
+Summary of decisions:
+- Migrate from GPT-4 to Claude (80% cost savings, same quality)
+- Rate limiting required before production
+- Fraud detection report to legal by Friday (priority)
